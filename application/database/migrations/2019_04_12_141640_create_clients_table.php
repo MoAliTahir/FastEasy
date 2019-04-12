@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePartenaireTable extends Migration
+class CreateClientsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreatePartenaireTable extends Migration
      */
     public function up()
     {
-        Schema::create('partenaire', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('clients', function (Blueprint $table) {
+            $table->increments('id')  ->nullable(false);
             $table->string('login')->unique()->nullable(false);
             $table->string('cin')->unique()->nullable(false);
             $table->string('nom')     ->nullable(false);
@@ -25,7 +25,6 @@ class CreatePartenaireTable extends Migration
             $table->string('chemin_image');
             $table->timestamps();
         });
-
     }
 
     /**
@@ -35,6 +34,6 @@ class CreatePartenaireTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('partenaire');
+        Schema::dropIfExists('clients');
     }
 }
