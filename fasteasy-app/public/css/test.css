@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+
+main ul {
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: inline-table;
+    position: relative;
+}
+main ul li {
+    float: left;
+}
+
+main ul li a {
+    color: #6daeb0;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 60px;
+}
+
+main ul li a:hover{
+    color: #fff;
+}
+
+main ul li ul {
+    background-color: #321655;
+    margin-top: 20px;
+    padding: 5px 0;
+    position: absolute;
+}
+
+main ul li ul:before {
+    background-color: #321655;
+    content: "";
+    display: block;
+    height: 8px;
+    left: 26px; /* (nav ul li a { width: 60px; } / 2) - (nav ul li ul:before { width: 8px; } / 2) */
+    position: absolute;
+    top: -4px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 8px;
+    z-index: -1;
+}
+
+main ul li ul li {
+    float: none;
+}
+
+ main ul li ul li a {
+    color: #fff;
+}
+
+main ul li ul li a:hover {
+    /*background-color: white;*/
+    color: red;
+}
+ /******************************** WELCOME PAGE*/
+.annonce:hover{
+    border: solid red 3px;
+
+}
+
+
+.annonce {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.annonce  {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+.zoom div {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.zoom div:hover  {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/********************************navbar************************/
+
+
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+
+a { text-decoration: none; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after { clear: both; }
+
+
+
+/********************************navbar************************/
+
+
+
